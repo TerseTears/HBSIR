@@ -19,14 +19,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
+    - name: Install poetry
+      run: pip install poetry
+
     - name: Set up Python 3.10
       uses: actions/setup-python@v4
       with:
         python-version: "3.10"
         cache: 'poetry'
+
     - name: Install dependencies
       run: |
         poetry install
+
     - name: Test with pytest
       run: |
         pytest tests/
