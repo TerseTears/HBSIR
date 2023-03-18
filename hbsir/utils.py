@@ -7,7 +7,8 @@ from pathlib import Path
 import platform
 from zipfile import ZipFile
 
-from tqdm import tqdm
+from numpy import nan_to_num
+# from tqdm import tqdm
 import requests
 
 from . import metadata
