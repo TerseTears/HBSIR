@@ -23,7 +23,7 @@ jobs:
     - name: Install poetry
       run: pip install poetry
 
-    - name: Install poetry
+    - name: Install pytest
       run: pip install pytest
 
     - name: Set up Python 3.10
